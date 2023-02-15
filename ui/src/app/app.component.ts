@@ -15,7 +15,9 @@ export class AppComponent {
       this.studentForm=this.fb.group({
         'studentId':['',[Validators.required,Validators.max(99999999)]],
         'studentName':['',[Validators.required,Validators.maxLength(50),Validators.pattern('[A-Za-z ]+')]],
-        'studentGpa':['0',[Validators.max(4),Validators.min(0)]]
+        'studentGpa':['0',[Validators.max(4),Validators.min(0)]],
+        'studentPhone':['',[Validators.max(4),Validators.min(0)]],
+        'studenteMail':['',[Validators.max(4),Validators.min(0)]]
       })
   }
 

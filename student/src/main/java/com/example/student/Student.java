@@ -10,5 +10,7 @@ public class Student {
     public Integer studentId;
     public String studentName;
     public Double studentGpa;
+    public Long studentPhone;
+    public String eMail;
     
 }

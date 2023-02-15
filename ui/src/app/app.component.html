@@ -2,6 +2,8 @@
 <p><b>Student Id:</b>{{student.studentId}}</p>
 <p><b>Student Name:</b>{{student.studentName}}</p>
 <p><b>Student Gpa:</b>{{student.studentGpa}}</p>
+<p><b>Student Phone:</b>{{student.studentPhone}}</p>
+<p><b>Student eMail:</b>{{student.studenteMail}}</p>
 </div>
 
 <h4>Add Student</h4>
@@ -9,5 +11,9 @@
     <b>Student Id:</b><input formControlName="studentId" type="number">
     <b>Student Name:</b><input formControlName="studentName"  type="text">
     <b>Student Gpa:</b><input formControlName="studentGpa"  type="number">
-<button [disabled]="studentForm.status=='INVALID'" (click)="addStudent()">Submit</button>
+    <b>Student Phone:</b><input formControlName="studentPhone"  type="tel">
+    <b>Student eMail:</b><input formControlName="studentGpa"  type="email">
+<button  (click)="addStudent()">Submit</button>
 </form>
+
+<!-- [disabled]="studentForm.status=='INVALID'" -->
