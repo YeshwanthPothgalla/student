@@ -12,5 +12,9 @@ public class Student {
     public Double studentGpa;
     public Long studentPhone;
     public String eMail;
+
+    public String toString(){
+        return this.studentId.toString();
+    }
     
 }

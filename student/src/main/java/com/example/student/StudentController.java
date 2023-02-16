@@ -25,6 +25,7 @@ public class StudentController {
 
     @PostMapping
     public void addStudent(@RequestBody Student student){
+       
         repo.save(student);
     }
     
